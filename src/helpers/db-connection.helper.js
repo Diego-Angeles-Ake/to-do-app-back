@@ -10,7 +10,7 @@ const authenticateConnection = async () => {
 };
 
 const synchronizeDatabase = async () => {
-  await db.sync({ force: true });
+  await db.sync();
   console.log('All models were synchronized successfully.');
 };
 
